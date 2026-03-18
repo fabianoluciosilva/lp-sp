@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Phone, MapPin, Clock, CheckCircle2 } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
 
-const phoneNumber = "(21) 3529-7993";
+const phoneNumber = "(11) 3529-7993"; // Atualizado para DDD 11
 
 export const Footer = () => {
   return (
@@ -15,7 +15,7 @@ export const Footer = () => {
               Simples Solução TI
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Especialista em suporte de TI e terceirização para empresas no Rio de Janeiro,
+              Especialista em suporte de TI e terceirização para empresas em São Paulo,
               com SLA garantido, resposta rápida e atendimento 24/7.
             </p>
             <p className="mt-4 text-xs text-gray-500 font-mono">
@@ -32,15 +32,15 @@ export const Footer = () => {
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-cyan-400 mt-1 shrink-0" />
                 <span>
-                  <strong className="text-white block mb-1">Capital & Grande Rio:</strong>
-                  Rio de Janeiro, Niterói, Duque de Caxias, Nova Iguaçu.
+                  <strong className="text-white block mb-1">Moema e Proximidades:</strong>
+                  Atendimento presencial ágil em Moema, Vila Olímpia, Itaim Bibi, Brooklin e região.
                 </span>
               </p>
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-cyan-400 mt-1 shrink-0" />
                 <span>
-                  <strong className="text-white block mb-1">Região dos Lagos:</strong>
-                  Cabo Frio, Búzios, São Pedro da Aldeia e Arraial do Cabo.
+                  <strong className="text-white block mb-1">São Paulo (Capital):</strong>
+                  Suporte remoto de alta disponibilidade e projetos corporativos para toda a cidade.
                 </span>
               </p>
               <p className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-800">
@@ -59,7 +59,7 @@ export const Footer = () => {
               <Clock className="w-4 h-4 inline mr-2 text-cyan-400" />
               Suporte técnico empresarial e monitoramento contínuo.
             </p>
-            <div className="mt-4 space-y-4"> {/* Adicionado space-y-4 aqui para espaçar a caixa e o botão */}
+            <div className="mt-4 space-y-4"> 
               <div className="flex items-center gap-2 text-green-400 bg-white/5 p-3 rounded-xl border border-white/10">
                 <CheckCircle2 className="w-5 h-5 shrink-0" />
                 <span className="text-sm font-semibold">
@@ -70,8 +70,8 @@ export const Footer = () => {
               {/* --- BOTÃO DO WHATSAPP NO FOOTER --- */}
               <WhatsAppButton 
                 buttonText="Chamar no WhatsApp"
-                message="Olá! Cheguei no final do site da Simples Solução e gostaria de falar com a equipe de atendimento comercial."
-                className="w-full text-base py-3" // Classes extras para adaptar o botão ao espaço menor da coluna do footer
+                message="Olá! Estava navegando no site da Simples Solução e gostaria de falar com a equipe sobre o suporte de TI em SP."
+                className="w-full text-base py-3" 
               />
             </div>
           </div>
@@ -90,7 +90,7 @@ export const Footer = () => {
                 Política de Privacidade
               </Link>
               <span className="text-slate-700">|</span>
-              <p>Suporte de TI Empresarial • RJ e Região dos Lagos</p>
+              <p>Suporte de TI Empresarial • São Paulo, SP</p>
             </div>
           </div>
         </div>
