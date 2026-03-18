@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Phone, MapPin, Clock, CheckCircle2 } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
 
-const phoneNumber = "(11) 3529-7993"; // Atualizado para DDD 11
+const phoneNumber = "(21) 3529-7993"; // Atualizado para DDD 11
 
 export const Footer = () => {
   return (
