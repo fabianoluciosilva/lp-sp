@@ -13,22 +13,21 @@ export const AlertSection = () => {
           <AlertTriangle className="w-20 h-20 text-red-600 mx-auto mb-6" />
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Sua Empresa Está Protegida?
+            O Ritmo de São Paulo Não Perdoa Falhas de TI
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Falhas de TI, ataques cibernéticos e lentidão nos sistemas geram
-            prejuízos financeiros, paralisações e riscos legais para sua empresa.
+            Na capital paulista, a concorrência não dorme. Lentidão nos sistemas, quedas de servidor e ataques cibernéticos significam mais do que dor de cabeça: geram <span className="font-bold">paralisação da sua equipe, perda de clientes para o concorrente e prejuízos financeiros reais</span>.
           </p>
 
           <p className="text-xl font-semibold text-red-600 mb-8">
-            Evite perdas e garanta a continuidade do seu negócio.
+            Não deixe sua tecnologia ser o gargalo do seu crescimento. Antecipe-se aos problemas.
           </p>
 
           {/* BOTÃO FIXO DO WHATSAPP USANDO O COMPONENTE */}
           <WhatsAppButton 
-            buttonText="Proteger Minha Empresa Agora"
-            message="Olá! Estou no site da Simples Solução e preciso proteger os dados e a TI da minha empresa antes que seja tarde. Podemos conversar?"
+            buttonText="Blindar Minha Operação Agora"
+            message="Olá! Vi o alerta no site e quero garantir que minha empresa em SP não sofra com paradas de TI. Como a Simples Solução pode me ajudar?"
           />
           
         </div>
