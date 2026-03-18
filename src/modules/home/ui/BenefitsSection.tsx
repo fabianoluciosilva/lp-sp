@@ -17,93 +17,93 @@ import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
 const serviceGroups = [
   {
     id: "empresas",
-    title: "Empresas no RJ",
-    subtitle: "Terceirização completa com SLA garantido",
+    title: "Empresas em São Paulo",
+    subtitle: "Terceirização de alto nível com SLA rígido",
     icon: Building2Icon,
     color: "text-blue-600",
     bgColor: "bg-blue-50",
     benefits: [
       {
         icon: HandshakeIcon,
-        title: "Terceirização de TI",
+        title: "Terceirização Estratégica",
         description:
-          "Gestão completa sem custos de TI interno. Equipe dedicada, SLA e suporte 24/7.",
+          "Gestão completa da TI sem custos trabalhistas. Equipe dedicada, SLA agressivo e suporte 24/7 para sua operação.",
         color: "from-blue-600 to-indigo-700",
       },
       {
         icon: ServerIcon,
-        title: "Infraestrutura e Redes",
+        title: "Infraestrutura de Alta Performance",
         description:
-          "Projetos de rede, servidores e nuvem com alta disponibilidade e segurança.",
+          "Projetos de rede, servidores e nuvem com alta disponibilidade. Preparados para escalar com o seu negócio.",
         color: "from-indigo-500 to-blue-500",
       },
       {
         icon: Settings2Icon,
-        title: "Consultoria Estratégica",
+        title: "Consultoria e Inovação",
         description:
-          "Planejamento tecnológico para crescimento, segurança e redução de custos.",
+          "Alinhamos a tecnologia aos seus objetivos de negócio para garantir crescimento e previsibilidade de custos.",
         color: "from-slate-600 to-slate-800",
       },
     ],
   },
   {
     id: "seguranca",
-    title: "Segurança da Informação",
-    subtitle: "Proteção completa contra ameaças digitais",
+    title: "Segurança Cibernética",
+    subtitle: "Proteção intransigente contra ameaças",
     icon: ShieldIcon,
     color: "text-emerald-600",
     bgColor: "bg-emerald-50",
     benefits: [
       {
         icon: LockIcon,
-        title: "Proteção Contra Ataques",
+        title: "Blindagem de Dados",
         description:
-          "Firewall, antivírus corporativo e monitoramento contra ransomware e invasões.",
+          "Firewall avançado, antivírus corporativo e monitoramento em tempo real contra ransomware e vazamentos.",
         color: "from-emerald-600 to-green-600",
       },
       {
         icon: ShieldIcon,
-        title: "Backup e Continuidade",
+        title: "Continuidade de Negócios",
         description:
-          "Backup automático, recuperação de desastres e continuidade operacional.",
+          "Rotinas de backup automatizadas e plano de recuperação de desastres para garantir que você nunca perca dados.",
         color: "from-green-500 to-emerald-500",
       },
       {
         icon: MessageSquareIcon,
-        title: "Resposta em até 5 Min",
+        title: "SLA de Resposta em 5 Minutos",
         description:
-          "Atendimento técnico imediato para incidentes críticos e emergências.",
+          "Em SP cada segundo conta. Atendimento técnico imediato para incidentes críticos e emergências.",
         color: "from-blue-500 to-cyan-500",
       },
     ],
   },
   {
     id: "produtividade",
-    title: "Suporte Técnico Empresarial",
-    subtitle: "Menos falhas, mais performance",
+    title: "Suporte Técnico Corporativo",
+    subtitle: "Resolução ágil para sua equipe não parar",
     icon: TrendingDownIcon,
     color: "text-orange-600",
     bgColor: "bg-orange-50",
     benefits: [
       {
         icon: UsersIcon,
-        title: "Suporte Especializado",
+        title: "Help Desk Especializado",
         description:
-          "Atendimento direto com técnicos experientes em ambientes corporativos.",
+          "Sua equipe fala direto com analistas experientes, resolvendo problemas do dia a dia sem burocracia.",
         color: "from-orange-500 to-red-500",
       },
       {
         icon: TrendingDownIcon,
-        title: "Redução de Custos",
+        title: "Otimização de Custos (FinOps)",
         description:
-          "Reduza gastos com TI e evite paradas com gestão preventiva.",
+          "Identificamos gargalos e desperdícios na sua TI atual, transformando tecnologia em investimento eficiente.",
         color: "from-purple-500 to-pink-500",
       },
       {
         icon: TargetIcon,
-        title: "Foco no Seu Negócio",
+        title: "Foco no Core Business",
         description:
-          "Delegue sua TI e concentre-se no crescimento da sua empresa.",
+          "Tiramos a TI das suas costas. Foque no que importa: liderar seu mercado e fechar novos negócios.",
         color: "from-teal-500 to-cyan-500",
       },
     ],
@@ -120,10 +120,10 @@ export const BenefitsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Soluções Especializadas <span className="text-blue-600">B2B</span>
+            A Engenharia de TI por trás das <span className="text-blue-600">Empresas que Crescem</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Atendimento exclusivo para empresas no Rio de Janeiro e Região dos Lagos.
+            Soluções B2B projetadas para a velocidade e exigência do mercado de São Paulo.
           </p>
         </div>
 
@@ -174,8 +174,8 @@ export const BenefitsSection = () => {
         {/* BOTÃO FIXO DO WHATSAPP NO FINAL DA SEÇÃO DE BENEFÍCIOS */}
         <div className="mt-16 text-center">
           <WhatsAppButton 
-            buttonText="Falar com um Consultor de TI"
-            message="Olá! Estava vendo as soluções e serviços no site da Simples Solução e gostaria de falar com um consultor sobre as necessidades da minha empresa."
+            buttonText="Agendar Diagnóstico Gratuito"
+            message="Olá! Gostei das soluções que a Simples Solução oferece e quero entender como aplicar isso na minha empresa em São Paulo."
           />
         </div>
 
