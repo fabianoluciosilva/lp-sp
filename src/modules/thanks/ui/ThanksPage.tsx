@@ -10,12 +10,12 @@ import {
   AlertTriangleIcon,
 } from "lucide-react";
 
-const PHONE_E164 = "552135297993"; // WhatsApp (sem +)
-const PHONE_TEL = "2135297993"; // Telefone
+const PHONE_E164 = "552135297993"; // Retornado para DDD 21
+const PHONE_TEL = "2135297993"; // Retornado para DDD 21
 
-// Mensagem pré-configurada (lead novo + urgência)
+// Mensagem pré-configurada (lead novo + urgência + SP para o seu comercial identificar)
 const WHATSAPP_MESSAGE =
-  "Olá! Acabei de enviar o formulário no site da Simples Solução TI. Ainda não sou cliente, mas estou com *urgência* para resolver um problema de TI na minha empresa. Pode me atender o quanto antes, por favor?";
+  "Olá! Acabei de enviar o formulário no site da Simples Solução TI. Ainda não sou cliente, mas estou com *urgência* para resolver um problema de TI na minha empresa em São Paulo. Pode me atender o quanto antes, por favor?";
 
 const whatsappHref = `https://wa.me/${PHONE_E164}?text=${encodeURIComponent(
   WHATSAPP_MESSAGE
@@ -109,13 +109,15 @@ export const ThanksPage = () => {
           </div>
 
           {/* Voltar */}
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm font-medium"
-          >
-            <ArrowLeftIcon className="w-4 h-4" />
-            Voltar para o site
-          </Link>
+          <div className="mt-8">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm font-medium"
+            >
+              <ArrowLeftIcon className="w-4 h-4" />
+              Voltar para o site
+            </Link>
+          </div>
         </div>
       </div>
     </div>
