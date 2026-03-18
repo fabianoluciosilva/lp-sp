@@ -32,7 +32,7 @@ export const HomePage = () => {
       {/* Prova social */}
       <TestimonialsSection />
 
-      {/* Garantia — redução de fricção */}
+      {/* Garantia — redução de fricção com pegada SP */}
       <section
         id="guarantee-section"
         className="py-20 bg-white scroll-mt-24"
@@ -42,26 +42,25 @@ export const HomePage = () => {
           <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-3xl p-12 border-4 border-green-500 shadow-2xl">
             <Shield className="w-20 h-20 text-green-600 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Garantia Blindada de Satisfação
+              Garantia Blindada para o Ritmo de São Paulo
             </h2>
             <h3 className="text-2xl font-bold text-green-600 mb-4">
-              30 Dias Sem Risco
+              Sua TI sem paradas. 30 Dias Sem Risco.
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Se você não estiver <span className="font-bold">100% satisfeito</span> com nossos
-              serviços em até 30 dias, devolvemos seu investimento.{" "}
+              Sabemos que na capital, <span className="font-bold">tempo é dinheiro e sua operação não pode parar</span>. Se você não estiver 100% satisfeito com a nossa agilidade de suporte em até 30 dias, devolvemos seu investimento.{" "}
               <span className="font-bold">
                 Sem perguntas. Sem burocracia.
               </span>
             </p>
             <p className="text-xl font-semibold text-gray-800 mb-8">
-              Essa é nossa confiança na qualidade do nosso trabalho.
+              Essa é a nossa confiança em entregar a performance que a sua empresa exige.
             </p>
 
             {/* BOTÃO FIXO DO WHATSAPP USANDO O COMPONENTE */}
             <WhatsAppButton 
               buttonText="Falar com um Especialista Agora"
-              message="Olá! Vi a garantia de 30 dias no site e gostaria de entender como a Simples Solução pode assumir a TI da minha empresa."
+              message="Olá! Vi a garantia de 30 dias no site e quero entender como a Simples Solução pode dar mais agilidade para a TI da minha empresa em SP."
             />
 
           </div>
