@@ -4,28 +4,28 @@ import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
 const comparisonData = [
   {
     title: "1. Tempo de Resposta",
-    bad: "Você abre um chamado e reza. Demoram horas ou dias para responder, enquanto sua empresa perde dinheiro.",
-    good: "Resposta em até 5 minutos. O seu problema começa a ser resolvido na hora, com SLA formalizado.",
+    bad: "Sua operação para e você fica horas (ou dias) esperando um retorno, enquanto a empresa perde dinheiro.",
+    good: "SLA de 5 minutos. Atendimento imediato para que a sua equipe não perca um segundo de produtividade.",
   },
   {
     title: "2. Prevenção vs. Apagar Incêndios",
-    bad: "Só aparecem e mexem em algo depois que o servidor já caiu ou a rede parou de funcionar.",
-    good: "Monitoramento 24/7. Corrigimos pequenas falhas preventivamente, antes que afetem sua operação.",
+    bad: "O suporte só age depois que o servidor já caiu e o prejuízo operacional já foi gerado.",
+    good: "Monitoramento 24/7. Antecipamos e corrigimos falhas silenciosas antes que afetem a sua empresa.",
   },
   {
     title: "3. Quedas de Internet e Rede",
-    bad: "Se a operadora de internet falha, o escritório inteiro fica sem rede e o trabalho para completamente.",
-    good: "Alta Disponibilidade. Configuramos roteadores com redundância. Se um link cair, o outro assume na hora.",
+    bad: "Quando a internet da operadora falha, o escritório inteiro cruza os braços e o trabalho para completamente.",
+    good: "Alta Disponibilidade (Failover). Links redundantes: se uma conexão cair, a outra assume instantaneamente.",
   },
   {
     title: "4. Organização e Transparência",
-    bad: "Pedidos soltos pelo WhatsApp do técnico, sem histórico e sem controle das suas licenças.",
-    good: "Gestão Corporativa. Portal de Help Desk, registro de visitas e gestão exata do seu parque tecnológico.",
+    bad: "Pedidos desorganizados pelo WhatsApp do técnico, sem métricas, sem histórico e sem gestão de licenças.",
+    good: "Gestão Nível Enterprise. Portal de Help Desk, relatórios gerenciais e controle absoluto do seu parque tecnológico.",
   },
   {
     title: "5. Nível Técnico da Equipe",
-    bad: "Profissionais juniores ou dependência de um 'faz-tudo' que não domina infraestruturas complexas.",
-    good: "+20 anos de experiência. Equipe sênior especialista em ambientes corporativos e servidores.",
+    bad: "Dependência de profissionais juniores ou 'faz-tudo' que não dominam infraestruturas críticas.",
+    good: "+20 anos de expertise. Equipe de engenharia sênior especialista em servidores e ambientes corporativos complexos.",
   },
 ];
 
@@ -35,14 +35,14 @@ export const ComparisonSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Chega de dores de cabeça com a sua TI.
+            Sua TI atual aguenta o ritmo de São Paulo?
           </h2>
           <p className="text-lg text-gray-600">
-            Veja a diferença entre continuar com um suporte amador e ter a{" "}
+            Veja a diferença entre depender de um suporte reativo e ter a{" "}
             <span className="font-semibold text-blue-600">
               Simples Solução TI
             </span>{" "}
-            como parceira estratégica do seu negócio.
+            garantindo a alta performance da sua operação.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export const ComparisonSection = () => {
           <div className="bg-white rounded-2xl shadow-sm border border-red-100 overflow-hidden">
             <div className="bg-red-50 py-6 text-center border-b border-red-100">
               <h3 className="text-xl font-bold text-red-800">
-                ❌ O Suporte de TI Comum
+                ❌ O Suporte de TI Amador
               </h3>
             </div>
             <div className="p-6 md:p-8 space-y-8">
@@ -100,7 +100,7 @@ export const ComparisonSection = () => {
         <div className="mt-16 text-center">
           <WhatsAppButton 
             buttonText="Quero uma TI Profissional"
-            message="Olá! Vi o comparativo no site da Simples Solução e quero parar de apagar incêndios na TI da minha empresa. Podemos conversar?"
+            message="Olá! Vi o comparativo no site da Simples Solução e quero parar de apagar incêndios na TI da minha empresa em SP. Podemos conversar?"
           />
         </div>
         {/* --- FIM DO BOTÃO DE WHATSAPP --- */}
