@@ -26,7 +26,7 @@ export const HomeHeroSection = () => {
         <div className="hidden md:block absolute inset-0">
           <Image
             src="/imagem2.webp"
-            alt="Suporte de TI para empresas no Rio de Janeiro e Região dos Lagos"
+            alt="Suporte de TI para empresas em São Paulo, Moema e região"
             fill
             priority
             quality={70}
@@ -40,15 +40,15 @@ export const HomeHeroSection = () => {
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-8 mt-12 md:mt-0">
           <ZapIcon className="w-4 h-4 text-yellow-400" />
           <span className="text-white text-sm font-medium">
-            Atendimento corporativo no RJ • Resposta em até 5 minutos
+            Atendimento corporativo em SP • Resposta em até 5 minutos
           </span>
         </div>
 
         {/* H1 OTIMIZADO PARA ADS: keyword + local + intenção */}
         <h1 className="mb-6 text-3xl md:text-5xl font-bold text-white leading-tight">
-          Suporte de TI para Empresas no Rio de Janeiro
+          Suporte de TI para Empresas em São Paulo
           <span className="block mt-2 bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Terceirização e Gestão de TI com SLA
+            Terceirização e Gestão de TI com Alta Performance
           </span>
         </h1>
 
@@ -59,17 +59,17 @@ export const HomeHeroSection = () => {
             empresa de TI especializada em atendimento corporativo
           </strong>
           , com{" "}
-          <strong>terceirização de TI com suporte empresarial</strong> e{" "}
-          <strong>gestão de TI para empresas com SLA</strong>.
+          <strong>terceirização de TI de alto nível</strong> e{" "}
+          <strong>gestão de infraestrutura com SLA rigoroso</strong>.
           <br />
-          Atendemos Grande Rio, Niterói, Baixada e Região dos Lagos.
+          Atendimento presencial em Moema e região, e suporte remoto para toda a Capital.
         </p>
 
         {/* BLOCO “SEO-SAFE” (Acessível, não escondido por display:none) */}
         <p className="sr-only">
-          Suporte de TI para empresas no Rio de Janeiro. Empresa de TI
-          especializada em atendimento corporativo. Terceirização de TI com
-          suporte empresarial. Gestão de TI para empresas com SLA.
+          Suporte de TI para empresas em São Paulo. Empresa de TI
+          especializada em atendimento corporativo SP. Terceirização de TI com
+          suporte empresarial em Moema. Gestão de TI para empresas com SLA em São Paulo.
         </p>
 
         {/* --- ÁREA DE BOTÕES DE CONVERSÃO --- */}
@@ -78,7 +78,7 @@ export const HomeHeroSection = () => {
           {/* Botão Primário: WhatsApp (Urgência) */}
           <WhatsAppButton 
             buttonText="Falar com Especialista Agora"
-            message="Olá! Estou no site da Simples Solução e preciso de suporte de TI para a minha empresa. Podemos falar?"
+            message="Olá! Estou no site da Simples Solução e preciso de suporte de TI de alta performance para a minha empresa em SP. Podemos falar?"
             className="w-full sm:w-auto" // Garante que fique bonito no celular
           />
 
@@ -89,7 +89,7 @@ export const HomeHeroSection = () => {
             href="/#contact-section"
           >
             <SendIcon className="mr-2 h-5 w-5" />
-            Solicitar Orçamento
+            Solicitar Diagnóstico
           </Link>
         </div>
         {/* --- FIM DA ÁREA DE BOTÕES --- */}
