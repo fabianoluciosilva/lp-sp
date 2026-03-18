@@ -22,12 +22,12 @@ export const ContactFormSection = () => {
     <section id="contact-section" className="py-20 bg-slate-900 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Solicite Suporte de TI Empresarial
+          A TI da sua Empresa em Mãos Especialistas
         </h2>
 
         <p className="text-gray-300 mb-10">
-          Atendimento corporativo com SLA e resposta rápida.  
-          Exclusivo para empresas no Rio de Janeiro.
+          Atendimento corporativo de alto nível com SLA agressivo e resposta rápida.  
+          Exclusivo para empresas em São Paulo.
         </p>
 
         <form
@@ -45,11 +45,11 @@ export const ContactFormSection = () => {
           </div>
 
           <div>
-            <label className="block mb-1 text-sm font-medium">E-mail</label>
+            <label className="block mb-1 text-sm font-medium">E-mail Corporativo</label>
             <input
               type="email"
               required
-              placeholder="seu@email.com"
+              placeholder="seu@emaildaempresa.com.br"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
@@ -59,19 +59,19 @@ export const ContactFormSection = () => {
             <input
               type="tel"
               required
-              placeholder="(21) 9XXXX-XXXX"
+              placeholder="(11) 9XXXX-XXXX"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
 
           <div>
             <label className="block mb-1 text-sm font-medium">
-              Como podemos ajudar?
+              Como podemos acelerar o seu negócio hoje?
             </label>
             <textarea
               rows={4}
               required
-              placeholder="Descreva sua necessidade de TI"
+              placeholder="Descreva o tamanho da sua operação e sua principal necessidade de TI"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
@@ -81,11 +81,11 @@ export const ContactFormSection = () => {
             disabled={loading}
             className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 rounded-xl transition disabled:opacity-50"
           >
-            {loading ? "Enviando..." : "Quero Orçamento em 5 Minutos"}
+            {loading ? "Enviando..." : "Receber Contato de um Especialista em 5 Minutos"}
           </button>
 
           <p className="text-xs text-gray-400 text-center mt-2">
-            Atendimento exclusivo para empresas • Não atendemos pessoa física
+            Atendimento exclusivo B2B • Não prestamos suporte para pessoa física
           </p>
         </form>
       </div>
