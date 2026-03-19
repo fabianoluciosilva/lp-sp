@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import ContabilidadeClient from "./ContabilidadeClient";
+import { inter, outfit } from "./fonts";
 
 export const metadata: Metadata = {
   title: "TI Especializada em Contabilidade RJ | Suporte Alterdata",
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ContabilidadeClient />;
+  return <ContabilidadeClient inter={inter} outfit={outfit} />;
 }
