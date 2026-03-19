@@ -2,19 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Inter, Outfit } from "next/font/google";
-
-// Fontes
-const inter = Inter({ subsets: ["latin"], weight: ["400", "600"], display: "swap", variable: "--font-inter" });
-const outfit = Outfit({ subsets: ["latin"], weight: ["300", "400", "700"], display: "swap", variable: "--font-outfit" });
-
-export const metadata = {
+const metadata = {
   title: "Suporte PJe e TI para Advogados no RJ | Token OAB e Certificado Digital",
   description:
     "Suporte PJe, Token OAB, Certificado Digital e TI para Advogados no Rio de Janeiro. Atendimento imediato para erros de Java, peticionamento e tribunais digitais.",
 };
 
-export default function AdvocaciaClient() {
+export default function AdvocaciaClient({ inter, outfit }: { inter: any; outfit: any }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [

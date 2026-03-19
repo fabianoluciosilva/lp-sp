@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AdvocaciaClient from "./AdvocaciaClient";
+import { inter, outfit } from "./fonts";
 
 // Configuração de SEO (Server Side)
 export const metadata: Metadata = {
@@ -40,5 +41,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <AdvocaciaClient />;
+  return <AdvocaciaClient inter={inter} outfit={outfit} />;
 }
