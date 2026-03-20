@@ -25,32 +25,38 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="relative h-10 w-48">
           
-          {/* Logo Negativo (Branco) - Aparece quando NÃO há scroll (topo do ecrã) */}
-          <Image
-            src="/logo-negativo.png"
-            alt="Simples Solução - Consultoria de TI Empresarial"
-            fill
-            priority
-            sizes="(max-width: 768px) 150px, 200px"
-            className={`object-contain object-left transition-opacity duration-300 ${
-              scrolled ? "opacity-0 invisible" : "opacity-100 visible"
-            }`}
-          />
+          {/* Logo Negativa (Branca) - Visível apenas no topo (fundo azul) */}
+          <div className={`absolute inset-0 transition-opacity duration-300 ${
+            scrolled ? "opacity-0 invisible" : "opacity-100 visible"
+          }`}>
+            <Image
+              src="/Logo-negativo.webp"
+              alt="Simples Solução TI - Suporte em São Paulo"
+              fill
+              priority
+              sizes="(max-width: 768px) 150px, 200px"
+              className="object-contain object-left"
+            />
+          </div>
 
-          {/* Logo Normal (Colorido) - Aparece quando HÁ scroll (fundo branco) */}
-          <Image
-            src="/simplessolucao-logo.webp"
-            alt="Simples Solução - Consultoria de TI Empresarial"
-            fill
-            priority
-            sizes="(max-width: 768px) 150px, 200px"
-            className={`object-contain object-left transition-opacity duration-300 absolute top-0 left-0 ${
-              scrolled ? "opacity-100 visible" : "opacity-0 invisible"
-            }`}
-          />
+          {/* Logo Normal (Colorida) - Visível apenas ao fazer scroll (fundo branco) */}
+          <div className={`absolute inset-0 transition-opacity duration-300 ${
+            scrolled ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}>
+            <Image
+              src="/simplessolucao-logo.webp"
+              alt="Simples Solução TI - Especialista em TI"
+              fill
+              priority
+              sizes="(max-width: 768px) 150px, 200px"
+              className="object-contain object-left"
+            />
+          </div>
 
         </div>
       </div>
     </nav>
   );
 };
+
+export default Navbar;
