@@ -26,7 +26,7 @@ export const HomeHeroSection = () => {
         <div className="hidden md:block absolute inset-0">
           <Image
             src="/imagem2.webp"
-            alt="Suporte de TI para empresas em São Paulo, Moema e região"
+            alt="Suporte de TI para empresas em São Paulo, Indianópolis e região"
             fill
             priority
             quality={70}
@@ -44,11 +44,11 @@ export const HomeHeroSection = () => {
           </span>
         </div>
 
-        {/* H1 OTIMIZADO PARA ADS: keyword + local + intenção */}
+        {/* H1 OTIMIZADO PARA ADS: keyword + local + nicho */}
         <h1 className="mb-6 text-3xl md:text-5xl font-bold text-white leading-tight">
           Suporte de TI para Empresas em São Paulo
           <span className="block mt-2 bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Terceirização e Gestão de TI com Alta Performance
+            Gestão de TI para Contabilidades e Advocacias
           </span>
         </h1>
 
@@ -58,18 +58,17 @@ export const HomeHeroSection = () => {
           <strong className="text-cyan-400">
             empresa de TI especializada em atendimento corporativo
           </strong>
-          , com{" "}
+          , com mais de 20 anos de experiência oferecendo{" "}
           <strong>terceirização de TI de alto nível</strong> e{" "}
-          <strong>gestão de infraestrutura com SLA rigoroso</strong>.
+          <strong>infraestrutura com SLA rigoroso</strong>.
           <br />
-          Atendimento presencial em Moema e região, e suporte remoto para toda a Capital.
+          Atendimento presencial em Indianópolis e região, e suporte remoto para toda a Capital Paulista.
         </p>
 
         {/* BLOCO “SEO-SAFE” (Acessível, não escondido por display:none) */}
         <p className="sr-only">
           Suporte de TI para empresas em São Paulo. Empresa de TI
-          especializada em atendimento corporativo SP. Terceirização de TI com
-          suporte empresarial em Moema. Gestão de TI para empresas com SLA em São Paulo.
+          especializada em atendimento corporativo SP. Terceirização de TI para escritórios de advocacia e contabilidade. Suporte empresarial em Indianópolis. Gestão de TI para empresas com SLA em São Paulo.
         </p>
 
         {/* --- ÁREA DE BOTÕES DE CONVERSÃO --- */}
@@ -78,7 +77,7 @@ export const HomeHeroSection = () => {
           {/* Botão Primário: WhatsApp (Urgência) */}
           <WhatsAppButton 
             buttonText="Falar com Especialista Agora"
-            message="Olá! Estou no site da Simples Solução e preciso de suporte de TI de alta performance para a minha empresa em SP. Podemos falar?"
+            message="Olá! Estou no site da Simples Solução e preciso de suporte de TI de alta performance para o meu escritório em SP. Podemos falar?"
             className="w-full sm:w-auto" // Garante que fique bonito no celular
           />
 
