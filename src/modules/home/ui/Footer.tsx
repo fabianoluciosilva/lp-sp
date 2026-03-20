@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Phone, MapPin, Clock, CheckCircle2 } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton"; // Importando o componente
 
-const phoneNumber = "(21) 3529-7993"; // Atualizado para DDD 11
+const phoneNumber = "(21) 3529-7993"; // Mantido o número central da operação
 
 export const Footer = () => {
   return (
@@ -26,21 +26,21 @@ export const Footer = () => {
           {/* Coluna 2: Área de Atendimento */}
           <div>
             <h4 className="text-lg font-bold text-white mb-4">
-              Área de Atendimento
+              Área de Atendimento e Sede
             </h4>
             <div className="space-y-4 text-gray-400 text-sm">
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-cyan-400 mt-1 shrink-0" />
                 <span>
-                  <strong className="text-white block mb-1">Moema e Proximidades:</strong>
-                  Atendimento presencial ágil em Moema, Vila Olímpia, Itaim Bibi, Brooklin e região.
+                  <strong className="text-white block mb-1">Sede Indianópolis:</strong>
+                  Av. Miruna, 168 - Indianópolis, São Paulo - SP, 04084-000.
                 </span>
               </p>
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-cyan-400 mt-1 shrink-0" />
                 <span>
                   <strong className="text-white block mb-1">São Paulo (Capital):</strong>
-                  Suporte remoto de alta disponibilidade e projetos corporativos para toda a cidade.
+                  Atendimento presencial ágil na região e suporte remoto de alta disponibilidade para toda a cidade.
                 </span>
               </p>
               <p className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-800">
