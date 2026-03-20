@@ -24,20 +24,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   applicationName: "Simples Solução TI",
 
-  title: "Suporte de TI para Empresas no RJ | Simples Solução TI",
+  title: "Suporte de TI para Empresas em SP | Simples Solução TI",
 
   description:
-    "Empresa de TI no Rio de Janeiro especializada em suporte técnico, terceirização de TI e gestão com SLA. Atendimento empresarial rápido e seguro.",
+    "Suporte de TI em São Paulo especializado em contabilidade, advocacia e PMEs. Mais de 20 anos de experiência com atendimento técnico rápido e SLA garantido.",
 
   keywords: [
-    "suporte de TI",
-    "suporte de TI para empresas",
-    "empresa de TI no Rio de Janeiro",
-    "terceirização de TI",
-    "gestão de TI empresarial",
-    "suporte técnico corporativo",
-    "TI para empresas RJ",
-    "MSP Rio de Janeiro",
+    "suporte de TI em São Paulo",
+    "suporte de TI SP",
+    "empresa de TI em São Paulo",
+    "TI para escritórios de advocacia SP",
+    "TI para contabilidade SP",
+    "terceirização de TI SP",
+    "gestão de TI Indianópolis",
+    "suporte técnico corporativo SP",
   ],
 
   authors: [{ name: "Simples Solução TI" }],
@@ -51,40 +51,60 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://rj.simplessolucao.com.br",
+    url: "https://sp.simplessolucao.com.br",
     siteName: "Simples Solução TI",
-    title: "Suporte de TI para Empresas no RJ | Simples Solução TI",
+    title: "Suporte de TI para Empresas em SP | Simples Solução TI",
     description:
-      "Especialistas em suporte de TI, terceirização e gestão de tecnologia para empresas no Rio de Janeiro.",
+      "Especialistas em suporte de TI, terceirização e gestão de tecnologia para empresas em São Paulo. Atendimento rápido e com SLA.",
     images: [
       {
-        url: "https://rj.simplessolucao.com.br/og-image.jpg",
+        url: "https://sp.simplessolucao.com.br/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Simples Solução TI - Suporte Empresarial",
+        alt: "Simples Solução TI - Suporte Empresarial em São Paulo",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Suporte de TI para Empresas no RJ | Simples Solução TI",
+    title: "Suporte de TI para Empresas em SP | Simples Solução TI",
     description:
-      "Suporte técnico empresarial, terceirização de TI e atendimento com SLA no Rio de Janeiro.",
-    images: ["https://rj.simplessolucao.com.br/og-image.webp"],
+      "Suporte técnico empresarial, terceirização de TI e atendimento com SLA em São Paulo.",
+    images: ["https://sp.simplessolucao.com.br/og-image.webp"],
   },
 };
-
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Configuração do Schema Markup para Local SEO (Google Rich Results)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ITUtility",
+    name: "Simples Solução TI",
+    url: "https://sp.simplessolucao.com.br",
+    logo: "https://sp.simplessolucao.com.br/logo.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Av. Miruna, 168",
+      addressLocality: "Indianópolis",
+      addressRegion: "SP",
+      postalCode: "04084-000",
+      addressCountry: "BR",
+    },
+  };
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
         {/* Scripts pesados removidos daqui para performance */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
 
       <body
