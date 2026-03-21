@@ -1,9 +1,10 @@
 "use client";
 
-// Estendendo a interface Window para que o TypeScript reconheça o dataLayer do GTM
+// Estendendo a interface Window para que o TypeScript reconheça o dataLayer do GTM e o gtag do Google Ads
 declare global {
   interface Window {
     dataLayer: Record<string, any>[];
+    gtag: (...args: any[]) => void;
   }
 }
 
@@ -24,12 +25,23 @@ export const WhatsAppButton = ({
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
   const handleConversion = () => {
-    // Agora o TypeScript não vai mais reclamar do dataLayer
-    if (typeof window !== "undefined" && window.dataLayer) {
-      window.dataLayer.push({
-        event: "conversion_whatsapp",
-        button_location: id_ads || "not_specified",
-      });
+    if (typeof window !== "undefined") {
+      // Evento GTM (dataLayer)
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: "conversion_whatsapp",
+          button_location: id_ads || "not_specified",
+        });
+      }
+
+      // Evento Google Ads — dispara conversão AW-11366276559
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-11366276559/SVcvCJrVjukaEM-77qsq",
+          value: 1.0,
+          currency: "BRL",
+        });
+      }
     }
   };
 
