@@ -100,10 +100,26 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        {/* Scripts pesados removidos daqui para performance */}
+        {/* Schema Markup - Local SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
+        {/* Google Ads Tag - SP */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2YTH2793WR"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2YTH2793WR');
+            `,
+          }}
         />
       </head>
 
