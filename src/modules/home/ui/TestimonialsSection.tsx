@@ -73,19 +73,19 @@ export const TestimonialsSection = () => {
                 ))}
               </div>
               <p className="text-gray-100 mb-6 leading-relaxed italic">
-                "O suporte é rápido, profissional e realmente resolve. Reduzimos falhas, ganhamos performance e hoje temos tranquilidade com nossa TI."
+                "Parceria estratégica essencial para nossa expansão. Infraestrutura segura, atendimento humano e respostas rápidas sempre que precisamos."
               </p>
               <div className="border-t border-white/20 pt-4 flex flex-col items-start gap-2">
                 <div className="relative h-10 w-32">
                   <Image
-                    src="/feedback-profit.webp"
-                    alt="Logo da empresa Profit Contabilidade"
+                    src="/feedback-pll.webp"
+                    alt="Logo da empresa Grupo PLL"
                     fill
                     className="object-contain object-left"
                     sizes="150px"
                   />
                 </div>
-                <p className="text-sm text-gray-300 font-medium">Profit Contabilidade</p>
+                <p className="text-sm text-gray-300 font-medium">Grupo PLL</p>
               </div>
             </CardContent>
           </Card>
