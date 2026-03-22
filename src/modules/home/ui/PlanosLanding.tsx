@@ -340,15 +340,14 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           id="planos-titulo"
           style={{
             fontFamily: "'Syne', sans-serif",
-            fontSize: "clamp(26px, 4vw, 40px)",
-            fontWeight: 800,
+            fontSize: "clamp(22px, 2.5vw, 32px)",
+            fontWeight: 700,
             color: "#ffffff",
             margin: "0 0 18px",
-            lineHeight: 1.15,
-            whiteSpace: "pre-line",
+            lineHeight: 1.3,
           }}
         >
-          {cfg.titulo}
+          {cfg.titulo.replace(/\n/g, " ")}
         </h2>
         <p style={{
           fontFamily: "'Inter', sans-serif",
