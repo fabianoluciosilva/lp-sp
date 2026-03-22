@@ -394,7 +394,11 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
             </ul>
 
             <a
-              href="#contact-section"
+              href={`https://wa.me/552140421350?text=${encodeURIComponent(
+                `Olá! Vi o Plano ${plano.nome} no site da Simples Solução e gostaria de receber uma proposta para minha empresa${cidade === "sp" ? " em SP" : " no RJ"}.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`plano-cta ${plano.destaque ? "cta-destaque" : "cta-outline"}`}
             >
               Solicitar Orçamento
