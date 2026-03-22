@@ -6,6 +6,7 @@ import { BenefitsSection } from "@/modules/home/ui/BenefitsSection";
 import { AlertSection } from "@/modules/home/ui/AlertSection";
 import { ComparisonSection } from "@/modules/home/ui/ComparisonSection";
 import { TestimonialsSection } from "@/modules/home/ui/TestimonialsSection";
+import { PlanosLanding } from "@/modules/home/ui/PlanosLanding";
 import { ContactFormSection } from "@/modules/home/ui/ContactFormSection";
 import { Footer } from "@/modules/home/ui/Footer";
 
@@ -31,6 +32,9 @@ export const HomePage = () => {
 
       {/* Prova social */}
       <TestimonialsSection />
+
+      {/* Planos de suporte — ponte entre prova social e garantia */}
+      <PlanosLanding cidade="sp" />
 
       {/* Garantia — redução de fricção com pegada SP e foco no nicho */}
       <section
