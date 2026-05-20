@@ -148,8 +148,6 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
       aria-labelledby="planos-titulo"
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap');
-
         .planos-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -196,7 +194,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           transform: translateX(-50%);
           background: #4A90D9;
           color: #fff;
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 10px;
           font-weight: 700;
           letter-spacing: 0.1em;
@@ -207,7 +205,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         }
 
         .plano-nome {
-          font-family: 'Syne', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 22px;
           font-weight: 700;
           color: #ffffff;
@@ -215,7 +213,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         }
 
         .plano-desc {
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 13px;
           color: rgba(255,255,255,0.55);
           font-weight: 400;
@@ -233,7 +231,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         }
 
         .plano-perfil-label {
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 10px;
           font-weight: 600;
           letter-spacing: 0.1em;
@@ -243,7 +241,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         }
 
         .plano-perfil-texto {
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 12.5px;
           color: rgba(255,255,255,0.7);
           font-weight: 400;
@@ -263,7 +261,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           display: flex;
           align-items: center;
           gap: 9px;
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 13px;
           font-weight: 400;
           color: rgba(255,255,255,0.82);
@@ -279,7 +277,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           width: 100%;
           padding: 13px;
           border-radius: 9px;
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 13.5px;
           font-weight: 600;
           text-align: center;
@@ -309,7 +307,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         }
 
         .plano-subnota {
-          font-family: 'Inter', sans-serif;
+          font-family: var(--font-geist-sans, sans-serif);
           font-size: 11px;
           color: rgba(255,255,255,0.28);
           text-align: center;
@@ -326,7 +324,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
       {/* Cabeçalho */}
       <div style={{ textAlign: "center", maxWidth: 600, margin: "0 auto 56px", padding: "0 20px" }}>
         <p style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "var(--font-geist-sans, sans-serif)",
           fontSize: 11,
           fontWeight: 700,
           letterSpacing: "0.14em",
@@ -339,7 +337,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
         <h2
           id="planos-titulo"
           style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "var(--font-geist-sans, sans-serif)",
             fontSize: "clamp(22px, 2.5vw, 32px)",
             fontWeight: 700,
             color: "#ffffff",
@@ -350,7 +348,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           {cfg.titulo.replace(/\n/g, " ")}
         </h2>
         <p style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "var(--font-geist-sans, sans-serif)",
           fontSize: 15,
           color: "rgba(255,255,255,0.5)",
           fontWeight: 400,
@@ -371,7 +369,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           padding: "10px 22px",
         }}>
           <span style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--font-geist-sans, sans-serif)",
             fontSize: 13,
             color: "rgba(255,255,255,0.5)",
             fontWeight: 400,
@@ -379,7 +377,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
             Planos
           </span>
           <span style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "var(--font-geist-sans, sans-serif)",
             fontSize: 18,
             fontWeight: 700,
             color: "#ffffff",
@@ -387,7 +385,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
             a partir de R$ 690/mês
           </span>
           <span style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--font-geist-sans, sans-serif)",
             fontSize: 12,
             color: "rgba(255,255,255,0.35)",
           }}>
@@ -446,7 +444,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
       {/* Rodapé */}
       <p style={{
         textAlign: "center",
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "var(--font-geist-sans, sans-serif)",
         fontSize: 13,
         color: "rgba(255,255,255,0.35)",
         margin: "48px auto 0",
