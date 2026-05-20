@@ -355,10 +355,45 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
           color: "rgba(255,255,255,0.5)",
           fontWeight: 400,
           lineHeight: 1.65,
-          margin: 0,
+          margin: "0 0 24px",
         }}>
           {cfg.descricao}
         </p>
+
+        {/* Preço âncora */}
+        <div style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 10,
+          background: "rgba(74,144,217,0.12)",
+          border: "1px solid rgba(74,144,217,0.3)",
+          borderRadius: 40,
+          padding: "10px 22px",
+        }}>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 13,
+            color: "rgba(255,255,255,0.5)",
+            fontWeight: 400,
+          }}>
+            Planos
+          </span>
+          <span style={{
+            fontFamily: "'Syne', sans-serif",
+            fontSize: 18,
+            fontWeight: 700,
+            color: "#ffffff",
+          }}>
+            a partir de R$ 690/mês
+          </span>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: 12,
+            color: "rgba(255,255,255,0.35)",
+          }}>
+            · Proposta em 5 min
+          </span>
+        </div>
       </div>
 
       {/* Cards */}
@@ -403,7 +438,7 @@ export const PlanosLanding = ({ cidade = "rj" }: PlanosLandingProps) => {
             >
               Solicitar Orçamento
             </a>
-            <p className="plano-subnota">Proposta personalizada · Sem compromisso</p>
+            <p className="plano-subnota">Orçamento em 5 min · Sem cartão de crédito</p>
           </div>
         ))}
       </div>

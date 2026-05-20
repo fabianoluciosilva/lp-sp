@@ -2,16 +2,17 @@ import { Shield } from "lucide-react";
 
 import { Navbar } from "@/modules/home/ui/Navbar";
 import { HomeHeroSection } from "@/modules/home/ui/HeroSection";
+import { HelpDeskSection } from "@/modules/home/ui/HelpDeskSection";
 import { BenefitsSection } from "@/modules/home/ui/BenefitsSection";
 import { AlertSection } from "@/modules/home/ui/AlertSection";
 import { ComparisonSection } from "@/modules/home/ui/ComparisonSection";
 import { TestimonialsSection } from "@/modules/home/ui/TestimonialsSection";
 import { PlanosLanding } from "@/modules/home/ui/PlanosLanding";
+import { FaqSection } from "@/modules/home/ui/FaqSection";
 import { ContactFormSection } from "@/modules/home/ui/ContactFormSection";
 import { Footer } from "@/modules/home/ui/Footer";
 
-// IMPORTAÇÃO CORRIGIDA - Buscando o componente na mesma pasta
-import { WhatsAppButton } from "./WhatsAppButton"; 
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export const HomePage = () => {
   return (
@@ -21,19 +22,22 @@ export const HomePage = () => {
       {/* Primeira dobra — foco em conversão */}
       <HomeHeroSection />
 
-      {/* Benefícios e diferenciais — alinhados às campanhas */}
+      {/* Help Desk tático — alinhado ao G2 (Suporte Técnico) */}
+      <HelpDeskSection />
+
+      {/* Benefícios e diferenciais — alinhados ao G1 (Gestão e Terceirização) */}
       <BenefitsSection />
 
       {/* Gatilho de risco — sem exagero, focado em B2B */}
       <AlertSection />
 
-      {/* Agitação de Dor e Comparativo - O salvador da pátria */}
+      {/* Agitação de Dor e Comparativo */}
       <ComparisonSection />
 
       {/* Prova social */}
       <TestimonialsSection />
 
-      {/* Planos de suporte — ponte entre prova social e garantia */}
+      {/* Planos de suporte — com preço âncora */}
       <PlanosLanding cidade="sp" />
 
       {/* Garantia — redução de fricção com pegada SP e foco no nicho */}
@@ -70,6 +74,9 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ segmentado por nicho */}
+      <FaqSection />
 
       {/* Formulário — conversão direta */}
       <ContactFormSection />

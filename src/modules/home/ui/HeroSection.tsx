@@ -37,10 +37,13 @@ export const HomeHeroSection = () => {
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-8 mt-12 md:mt-0">
-          <ZapIcon className="w-4 h-4 text-yellow-400" />
-          <span className="text-white text-sm font-medium">
-            Atendimento corporativo em SP • Resposta em até 5 minutos
+        <div className="inline-flex items-center gap-2 bg-orange-500/20 backdrop-blur-sm border border-orange-400/50 rounded-full px-6 py-2 mb-8 mt-12 md:mt-0 shadow-lg shadow-orange-500/10">
+          <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse shrink-0" />
+          <ZapIcon className="w-4 h-4 text-orange-300" />
+          <span className="text-orange-100 text-sm font-semibold">
+            ⏱️ SLA Garantido · Resposta em até{" "}
+            <span className="text-orange-300 font-bold">5 minutos</span>
+            {" "}· Atendimento Presencial em SP
           </span>
         </div>
 
