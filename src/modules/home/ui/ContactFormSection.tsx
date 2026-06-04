@@ -3,19 +3,52 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+// Endpoint público de ingestão de leads do ERP (grava em public.leads →
+// aparece no CRM em "Leads do Site"). CORS habilitado para esta origem.
+const LEADS_ENDPOINT = "https://erp.simplessolucao.com.br/api/leads";
+
 export const ContactFormSection = () => {
   const [loading, setLoading] = useState(false);
+  const [erro, setErro] = useState("");
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setErro("");
 
-    // Simulação de envio (substitua por API futuramente)
-    setTimeout(() => {
-      setLoading(false);
+    const fd = new FormData(e.currentTarget);
+
+    try {
+      const res = await fetch(LEADS_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          tipo_formulario: "landing",
+          origem_url: window.location.href,
+          assunto: "Landing SP",
+          nome: String(fd.get("nome") ?? ""),
+          email: String(fd.get("email") ?? ""),
+          telefone: String(fd.get("telefone") ?? "") || undefined,
+          mensagem: String(fd.get("necessidade") ?? "") || undefined,
+        }),
+      });
+
+      if (!res.ok) throw new Error("Falha ao enviar");
+
+      // Evento de conversão (Google Ads / GTM), se disponível.
+      if (typeof window !== "undefined" && (window as unknown as { dataLayer?: unknown[] }).dataLayer) {
+        (window as unknown as { dataLayer: Record<string, unknown>[] }).dataLayer.push({
+          event: "conversion_formulario",
+          button_location: "contact_form",
+        });
+      }
+
       router.push("/obrigado");
-    }, 1500);
+    } catch {
+      setErro("Não foi possível enviar agora. Tente novamente em instantes.");
+      setLoading(false);
+    }
   };
 
   return (
@@ -26,7 +59,7 @@ export const ContactFormSection = () => {
         </h2>
 
         <p className="text-gray-300 mb-10">
-          Atendimento corporativo de alto nível com SLA agressivo e resposta rápida.  
+          Atendimento corporativo de alto nível com SLA agressivo e resposta rápida.
           Exclusivo para empresas em São Paulo.
         </p>
 
@@ -38,6 +71,7 @@ export const ContactFormSection = () => {
             <label className="block mb-1 text-sm font-medium">Nome</label>
             <input
               type="text"
+              name="nome"
               required
               placeholder="Seu nome"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -48,6 +82,7 @@ export const ContactFormSection = () => {
             <label className="block mb-1 text-sm font-medium">E-mail Corporativo</label>
             <input
               type="email"
+              name="email"
               required
               placeholder="seu@emaildaempresa.com.br"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -58,6 +93,7 @@ export const ContactFormSection = () => {
             <label className="block mb-1 text-sm font-medium">Telefone / WhatsApp</label>
             <input
               type="tel"
+              name="telefone"
               required
               placeholder="(11) 9XXXX-XXXX"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -69,12 +105,17 @@ export const ContactFormSection = () => {
               Como podemos acelerar o seu negócio hoje?
             </label>
             <textarea
+              name="necessidade"
               rows={4}
               required
               placeholder="Descreva o tamanho da sua operação e sua principal necessidade de TI"
               className="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
+
+          {erro && (
+            <p className="text-sm text-red-400 bg-red-950/40 rounded-lg px-3 py-2">{erro}</p>
+          )}
 
           <button
             type="submit"
