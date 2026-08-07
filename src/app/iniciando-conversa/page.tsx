@@ -1,14 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { waHref } from "@/lib/whatsapp";
 
 export default function WhatsappRedirectPage() {
-  // Configuração dos dados
-  const phoneNumber = "552140421350";
-  const message = "Olá! Gostaria de solicitar um diagnóstico técnico para a minha empresa. Vi a garantia de atendimento rápido no site e aguardo o contato.";
-  
-  // Gera a URL formatada corretamente com codificação de caracteres
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  // waHref injeta a tag [ADS-SP] — faltava aqui (link montado à mão).
+  const whatsappUrl = waHref("Olá! Gostaria de solicitar um diagnóstico técnico para a minha empresa. Vi a garantia de atendimento rápido no site e aguardo o contato.");
 
   useEffect(() => {
     // Aguarda 1.5 segundos para o GTM disparar a conversão e redireciona

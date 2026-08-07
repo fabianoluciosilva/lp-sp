@@ -13,9 +13,11 @@ import {
 const PHONE_E164 = "552135297993"; // Retornado para DDD 21
 const PHONE_TEL = "2135297993"; // Retornado para DDD 21
 
-// Mensagem pré-configurada (lead novo + urgência + SP para o seu comercial identificar)
+// Mensagem pré-configurada (lead novo + urgência + SP para o seu comercial identificar).
+// Tag [ADS-SP] no início identifica pro agente de IA do ERP a origem do lead —
+// faltava aqui, mesma lacuna do restante deste repo.
 const WHATSAPP_MESSAGE =
-  "Olá! Acabei de enviar o formulário no site da Simples Solução TI. Ainda não sou cliente, mas estou com *urgência* para resolver um problema de TI na minha empresa em São Paulo. Pode me atender o quanto antes, por favor?";
+  "[ADS-SP] Olá! Acabei de enviar o formulário no site da Simples Solução TI. Ainda não sou cliente, mas estou com *urgência* para resolver um problema de TI na minha empresa em São Paulo. Pode me atender o quanto antes, por favor?";
 
 const whatsappHref = `https://wa.me/${PHONE_E164}?text=${encodeURIComponent(
   WHATSAPP_MESSAGE

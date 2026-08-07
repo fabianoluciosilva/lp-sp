@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { waHref } from "@/lib/whatsapp";
 
 interface FaqItem {
   pergunta: string;
@@ -180,7 +181,7 @@ export const FaqSection = () => {
         <p className="text-center text-gray-500 text-sm mt-10">
           Não encontrou sua resposta?{" "}
           <a
-            href="https://wa.me/552140421350?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20suporte%20de%20TI%20para%20minha%20empresa%20em%20SP."
+            href={waHref("Olá! Tenho uma dúvida sobre suporte de TI para minha empresa em SP.")}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"

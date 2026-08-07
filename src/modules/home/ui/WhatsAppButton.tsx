@@ -1,5 +1,7 @@
 "use client";
 
+import { waHref } from "@/lib/whatsapp";
+
 // Estendendo a interface Window para que o TypeScript reconheça o dataLayer do GTM e o gtag do Google Ads
 declare global {
   interface Window {
@@ -21,8 +23,11 @@ export const WhatsAppButton = ({
   buttonText = "Falar com um Especialista Agora",
   className = "",
 }: Props) => {
-  const waNumber = "552140421350";
-  const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+  // waHref injeta o prefixo [ADS-SP] — sem ele, todo lead que clicasse em
+  // qualquer um dos botões deste componente (usado em quase toda a página)
+  // caía como "WhatsApp Comercial" genérico no CRM, sem diferenciar de
+  // contato orgânico.
+  const waLink = waHref(message);
 
   const handleConversion = () => {
     if (typeof window !== "undefined") {

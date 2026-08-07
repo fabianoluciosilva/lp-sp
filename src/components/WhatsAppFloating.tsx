@@ -1,5 +1,7 @@
 "use client";
 
+import { waHref } from "@/lib/whatsapp";
+
 declare global {
   interface Window {
     dataLayer: Record<string, any>[];
@@ -8,11 +10,11 @@ declare global {
 }
 
 export const WhatsAppFloating = () => {
-  const waLink =
-    "https://wa.me/552140421350?text=" +
-    encodeURIComponent(
-      "Olá! Acessei o site da Simples Solução e gostaria de falar com um especialista sobre a TI da minha empresa em SP."
-    );
+  // Botão flutuante global (layout.tsx) — maior volume de cliques do site,
+  // e estava sem a tag [ADS-SP] (nenhum wa.me deste repo tinha).
+  const waLink = waHref(
+    "Olá! Acessei o site da Simples Solução e gostaria de falar com um especialista sobre a TI da minha empresa em SP."
+  );
 
   const handleClick = () => {
     if (typeof window === "undefined") return;

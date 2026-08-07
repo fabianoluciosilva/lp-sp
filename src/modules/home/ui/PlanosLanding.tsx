@@ -11,6 +11,8 @@
  * Posição recomendada: entre TestimonialsSection e a seção de Garantia.
  */
 
+import { waHref } from "@/lib/whatsapp";
+
 type Cidade = "rj" | "sp";
 
 interface CidadeConfig {
@@ -42,8 +44,11 @@ const CONFIG: Record<Cidade, CidadeConfig> = {
     titulo: "Qual é o nível de TI\nque a sua empresa precisa?",
     descricao:
       "Cada empresa tem uma estrutura diferente. Identifique o perfil que melhor descreve a sua operação e entre em contato para receber uma proposta personalizada.",
+    // [ADS-RJ] hardcoded (não waHref, que é [ADS-SP] fixo deste repo) — hoje
+    // esta variante "rj" não é renderizada aqui (HomePage.tsx só usa
+    // cidade="sp"), mas se algum dia for, a origem tem que continuar certa.
     ctaWhatsapp:
-      "https://wa.me/552140421350?text=Ol%C3%A1!%20Vi%20os%20planos%20no%20site%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20minha%20empresa%20no%20RJ.",
+      "https://wa.me/552140421350?text=" + encodeURIComponent("[ADS-RJ] Olá! Vi os planos no site e gostaria de receber uma proposta para minha empresa no RJ."),
     rodape:
       "Não encontrou o perfil ideal? Fale com a nossa equipe e montamos uma solução sob medida para a sua empresa.",
   },
@@ -52,8 +57,7 @@ const CONFIG: Record<Cidade, CidadeConfig> = {
     titulo: "A TI do seu escritório\nno nível que SP exige",
     descricao:
       "Especializados em escritórios de advocacia e contabilidade em São Paulo. Identifique o perfil da sua operação e receba uma proposta sem compromisso.",
-    ctaWhatsapp:
-      "https://wa.me/552140421350?text=Ol%C3%A1!%20Vi%20os%20planos%20no%20site%20e%20gostaria%20de%20receber%20uma%20proposta%20para%20minha%20empresa%20em%20SP.",
+    ctaWhatsapp: waHref("Olá! Vi os planos no site e gostaria de receber uma proposta para minha empresa em SP."),
     rodape:
       "Cada escritório tem uma demanda específica. Fale com a nossa equipe e montamos a solução ideal para o seu negócio.",
   },

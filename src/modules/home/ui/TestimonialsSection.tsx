@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { StarIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { waHref } from "@/lib/whatsapp";
 
 export const TestimonialsSection = () => {
   return (
@@ -157,7 +158,7 @@ export const TestimonialsSection = () => {
         <p className="text-center text-sm text-gray-500 mt-12 max-w-lg mx-auto leading-relaxed">
           Sua empresa pode ser a próxima a operar com TI de alto nível em São Paulo.{" "}
           <a
-            href="https://wa.me/552140421350?text=Ol%C3%A1!%20Vi%20os%20clientes%20da%20Simples%20Solu%C3%A7%C3%A3o%20no%20site%20e%20quero%20saber%20como%20a%20TI%20da%20minha%20empresa%20em%20SP%20pode%20evoluir."
+            href={waHref("Olá! Vi os clientes da Simples Solução no site e quero saber como a TI da minha empresa em SP pode evoluir.")}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 font-semibold hover:text-blue-300 transition-colors"
