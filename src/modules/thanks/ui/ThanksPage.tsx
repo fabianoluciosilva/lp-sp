@@ -10,8 +10,13 @@ import {
   AlertTriangleIcon,
 } from "lucide-react";
 
-const PHONE_E164 = "552135297993"; // Retornado para DDD 21
-const PHONE_TEL = "2135297993"; // Retornado para DDD 21
+// Corrigido 2026-08-07: usava o número do Help Desk RJ (2135297993) mesmo a
+// mensagem dizendo "ainda não sou cliente" — lead não-cliente caindo lá
+// nunca passa por identificar_cliente com sucesso e é redirecionado de volta
+// pro comercial, e essa conversa (finalidade='suporte') nunca cria
+// oportunidade no CRM. Corrigido para o número comercial correto.
+const PHONE_E164 = "552140421350"; // WhatsApp comercial (sem +)
+const PHONE_TEL = "2140421350"; // Telefone comercial
 
 // Mensagem pré-configurada (lead novo + urgência + SP para o seu comercial identificar).
 // Tag [ADS-SP] no início identifica pro agente de IA do ERP a origem do lead —
@@ -101,7 +106,7 @@ export const ThanksPage = () => {
                 className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition-all hover:scale-105 shadow-md w-full"
               >
                 <PhoneIcon className="w-5 h-5" />
-                (21) 3529-7993
+                (21) 4042-1350
               </a>
             </div>
 
