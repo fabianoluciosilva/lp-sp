@@ -28,7 +28,7 @@ const categorias: FaqCategoria[] = [
       {
         pergunta: "O que acontece se o sistema cair durante uma audiência ou prazo?",
         resposta:
-          "Com o nosso monitoramento 24/7, antecipamos falhas antes que ocorram. Em caso de incidente, o SLA de 5 minutos garante que um técnico já está atuando enquanto sua equipe ainda está tentando entender o problema.",
+          "Com o nosso monitoramento 24/7, antecipamos falhas antes que ocorram. Em caso de incidente, o SLA garantido em contrato assegura que um técnico já está atuando enquanto sua equipe ainda está tentando entender o problema.",
       },
       {
         pergunta: "Cuidam da segurança de dados dos clientes (LGPD)?",

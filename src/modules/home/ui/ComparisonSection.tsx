@@ -5,7 +5,7 @@ const comparisonData = [
   {
     title: "1. Tempo de Resposta",
     bad: "Sua operação para e você fica horas (ou dias) esperando um retorno, enquanto a empresa perde dinheiro.",
-    good: "SLA de 5 minutos. Atendimento imediato para que a sua equipe não perca um segundo de produtividade.",
+    good: "SLA garantido em contrato. Atendimento imediato para que a sua equipe não perca um segundo de produtividade.",
   },
   {
     title: "2. Prevenção vs. Apagar Incêndios",
@@ -25,7 +25,7 @@ const comparisonData = [
   {
     title: "5. Nível Técnico da Equipe",
     bad: "Dependência de profissionais juniores ou 'faz-tudo' que não dominam infraestruturas críticas.",
-    good: "+20 anos de expertise. Equipe de engenharia sênior especialista em servidores e ambientes corporativos complexos.",
+    good: "18 anos de expertise. Equipe de engenharia sênior especialista em servidores e ambientes corporativos complexos.",
   },
 ];
 

@@ -53,7 +53,7 @@ export const HomePage = () => {
               Garantia Blindada para o Ritmo de São Paulo
             </h2>
             <h3 className="text-2xl font-bold text-green-600 mb-4">
-              Mais de 20 Anos de Experiência. 30 Dias Sem Risco.
+              18 Anos de Experiência. 30 Dias Sem Risco.
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Sabemos que na capital paulista, <span className="font-bold">tempo é dinheiro e sua operação não pode parar</span>. Com foco no atendimento ágil a <span className="font-bold">escritórios de advocacia e contabilidade</span>, se você não estiver 100% satisfeito com a nossa performance técnica em até 30 dias, devolvemos seu investimento.{" "}

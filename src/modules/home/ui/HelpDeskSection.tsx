@@ -13,7 +13,7 @@ const bairros = [
 const pilares = [
   {
     icon: Clock,
-    titulo: "Resposta em Até 5 Minutos",
+    titulo: "SLA Garantido em Contrato",
     descricao:
       "SLA garantido por contrato. Chamado aberto agora, técnico respondendo em minutos — não horas.",
     destaque: true,
@@ -54,7 +54,7 @@ export const HelpDeskSection = () => {
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Seu técnico responde{" "}
-            <span className="text-orange-500">em 5 minutos.</span>
+            <span className="text-orange-500">com SLA garantido em contrato.</span>
             <span className="block text-gray-600 text-2xl md:text-3xl mt-2 font-semibold">
               Presencial ou Remoto. Sem enrolação.
             </span>
@@ -134,7 +134,7 @@ export const HelpDeskSection = () => {
             message="Olá! Preciso de suporte técnico rápido para minha empresa em SP. Podem me atender?"
           />
           <p className="text-gray-400 text-sm mt-3">
-            Resposta garantida em até 5 minutos · Exclusivo para empresas
+            SLA garantido em contrato · Exclusivo para empresas
           </p>
         </div>
 

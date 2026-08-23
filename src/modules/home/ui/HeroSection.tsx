@@ -7,9 +7,9 @@ import { SendIcon, ZapIcon } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton"; // Importando o nosso componente
 
 const stats = [
-  { number: "+20", label: "Anos de Experiência" },
+  { number: "18", label: "Anos de Experiência" },
   { number: "+100", label: "Empresas Atendidas" },
-  { number: "5min", label: "Resposta Garantida" },
+  { number: "SLA", label: "Garantido em Contrato" },
   { number: "24/7", label: "Suporte Empresarial" },
   { number: "99.9%", label: "Disponibilidade" },
 ];
@@ -41,9 +41,8 @@ export const HomeHeroSection = () => {
           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse shrink-0" />
           <ZapIcon className="w-4 h-4 text-orange-300" />
           <span className="text-orange-100 text-sm font-semibold">
-            ⏱️ SLA Garantido · Resposta em até{" "}
-            <span className="text-orange-300 font-bold">5 minutos</span>
-            {" "}· Atendimento Presencial em SP
+            ⏱️ SLA Garantido em Contrato{" "}
+            · Atendimento Presencial em SP
           </span>
         </div>
 
@@ -61,7 +60,7 @@ export const HomeHeroSection = () => {
           <strong className="text-cyan-400">
             empresa de TI especializada em atendimento corporativo
           </strong>
-          , com mais de 20 anos de experiência oferecendo{" "}
+          , com 18 anos de experiência oferecendo{" "}
           <strong>terceirização de TI de alto nível</strong> e{" "}
           <strong>infraestrutura com SLA rigoroso</strong>.
           <br />

@@ -30,7 +30,7 @@ export const TestimonialsSection = () => {
             Quem Confia na Simples Solução TI
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Mais de 20 anos e 100 empresas atendidas. Da infraestrutura de produtoras audiovisuais a clínicas de saúde de alta performance — o mesmo nível de excelência em São Paulo.
+            18 anos e mais de 100 empresas atendidas. Da infraestrutura de produtoras audiovisuais a clínicas de saúde de alta performance — o mesmo nível de excelência em São Paulo.
           </p>
         </div>
 
@@ -42,13 +42,13 @@ export const TestimonialsSection = () => {
           </div>
           <div className="hidden sm:block w-px h-10 bg-white/10" />
           <div className="text-center">
-            <div className="text-3xl font-bold text-white">+20</div>
+            <div className="text-3xl font-bold text-white">18</div>
             <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Anos de mercado</div>
           </div>
           <div className="hidden sm:block w-px h-10 bg-white/10" />
           <div className="text-center">
-            <div className="text-3xl font-bold text-white">5min</div>
-            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">SLA de resposta</div>
+            <div className="text-3xl font-bold text-white">SLA</div>
+            <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Garantido em contrato</div>
           </div>
           <div className="hidden sm:block w-px h-10 bg-white/10" />
           <div className="text-center">

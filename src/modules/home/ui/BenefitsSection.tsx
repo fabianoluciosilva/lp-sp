@@ -70,7 +70,7 @@ const serviceGroups = [
       },
       {
         icon: MessageSquareIcon,
-        title: "SLA de Resposta em 5 Minutos",
+        title: "SLA de Resposta Garantido em Contrato",
         description:
           "Em SP cada segundo conta. Atendimento técnico imediato para incidentes críticos e emergências.",
         color: "from-blue-500 to-cyan-500",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://rj.simplessolucao.com.br/contabilidade'
   },
   robots: {
-    index: true,
+    index: false,
     follow: true
   }
 };

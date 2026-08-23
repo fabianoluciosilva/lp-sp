@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Suporte de TI para Empresas em SP | Simples Solução TI",
 
   description:
-    "Suporte de TI em São Paulo especializado em contabilidade, advocacia e PMEs. Mais de 20 anos de experiência com atendimento técnico rápido e SLA garantido.",
+    "Suporte de TI em São Paulo especializado em contabilidade, advocacia e PMEs. 18 anos de experiência com atendimento técnico rápido e SLA garantido.",
 
   keywords: [
     "suporte de TI em São Paulo",
@@ -84,7 +84,7 @@ export default function RootLayout({
   // Configuração do Schema Markup para Local SEO (Google Rich Results)
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ITUtility",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     name: "Simples Solução TI",
     url: "https://sp.simplessolucao.com.br",
     logo: "https://sp.simplessolucao.com.br/logo.png",

@@ -63,7 +63,7 @@ export const Footer = () => {
               <div className="flex items-center gap-2 text-green-400 bg-white/5 p-3 rounded-xl border border-white/10">
                 <CheckCircle2 className="w-5 h-5 shrink-0" />
                 <span className="text-sm font-semibold">
-                  Resposta em até 5 minutos • SLA garantido
+                  SLA garantido em contrato
                 </span>
               </div>
               
