@@ -2,19 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Inter, Outfit } from "next/font/google";
-
-// Fontes
-const inter = Inter({ subsets: ["latin"], weight: ["400", "600"], display: "swap", variable: "--font-inter" });
-const outfit = Outfit({ subsets: ["latin"], weight: ["300", "400", "700"], display: "swap", variable: "--font-outfit" });
-
-export const metadata = {
+const metadata = {
   title: "Suporte de TI para Contabilidade no RJ | Alterdata e Domínio Sistemas",
   description:
     "Suporte de TI especializado para escritórios de contabilidade no RJ. Especialistas em Alterdata, Domínio, Nasajon, Questor e Prosoft. Diagnóstico gratuito.",
 };
 
-export default function ContabilidadeClient() {
+export default function ContabilidadeClient({ inter, outfit }: { inter: any; outfit: any }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
